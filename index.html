@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>book Mark</title>
+
+    <link
+      rel="shortcut icon"
+      href="./Images/bookMarkIcon.png"
+      type="image/x-icon"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=PT+Sans+Caption:wght@400;700&family=Pacifico&family=Righteous&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./Css/bootstrap.min.css" />
+
+    <link rel="stylesheet" href="./Css/all.min.css" />
+
+    <link rel="stylesheet" href="./Css/style.css" />
+  </head>
+  <body>
+    <main>
+      <div class="container py-5">
+        <div class="content">
+          <h1 id="bookMark-title" class="py-2">Bookmarker</h1>
+
+          <div class="bookMark-body my-5">
+            <h2 class="d-flex justify-content-center align-items-center pb-5">
+              <i class="fa-solid fa-bookmark mx-2"></i>
+              Bookmark your favorite sites
+
+              <i class="fa-solid fa-bookmark mx-2"></i>
+            </h2>
+
+            <div class="site_Name d-flex flex-column w-100 gap-2 mb-4">
+              <label for="bookMark_Name" class="mx-4">
+                <i class="fa-solid fa-book-bookmark"></i>
+                Site Name
+              </label>
+
+              <input
+                class="form-control"
+                id="bookMark_Name"
+                type="text"
+                placeholder="Bookmark Name"
+              />
+            </div>
+
+            <div class="site_Url d-flex flex-column w-100 gap-2 mb-4">
+              <label for="bookMark_url" class="mx-4">
+                <i class="fa-solid fa-link"></i>
+                Site URL
+              </label>
+              <input
+                class="form-control"
+                id="bookMark_url"
+                type="text"
+                placeholder="Website Url"
+              />
+            </div>
+
+            <button type="button" class="btnSubmit" id="btnSubmit">
+              Submit
+            </button>
+          </div>
+        </div>
+
+        <table class="table mt-4 text-center bg-light">
+          <thead>
+            <tr>
+              <th class="text-capitalize">index</th>
+              <th class="text-capitalize">Website Name</th>
+              <th class="text-capitalize">Visit</th>
+              <th class="text-capitalize">Delete</th>
+            </tr>
+          </thead>
+          <tbody id="tableContent"></tbody>
+        </table>
+      </div>
+      <div
+        class="light-container position-absolute start-0 top-0 w-100 h-100 d-flex justify-content-center align-items-center d-none"
+      >
+        <div class="box bg-white px-4 rounded-2 shadow-lg">
+          <header
+            class="box-header w-100 d-flex justify-content-between align-items-center mb-4"
+          >
+            <div class="circles d-flex">
+              <i class="red-icon fa-solid fa-circle me-2"></i>
+              <i class="yellow-icon fa-solid fa-circle me-2"></i>
+              <i class="green-icon fa-solid fa-circle me-2"></i>
+            </div>
+            <button class="btn border-0" id="closeBtn">
+              <i id="btnClose" class="fa-solid fa-xmark close fs-3"></i>
+            </button>
+          </header>
+          <p class="m-0 pb-2">
+            Site Name or Url is not valid, Please follow the rules below :
+          </p>
+          <ul class="rules list-unstyled m-0">
+            <li>
+              <i class="fa-regular fa-circle-right p-2"></i>Site name must
+              contain at least 3 characters
+            </li>
+            <li>
+              <i class="fa-regular fa-circle-right p-2"></i>Site URL must be a
+              valid one
+            </li>
+          </ul>
+        </div>
+      </div>
+    </main>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
