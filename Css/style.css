@@ -159,3 +159,58 @@ main {
   outline: 0;
   box-shadow: 0 0 0 0.25rem #fec16091;
 }
+
+/* ------------media query---------- */
+
+@media screen and (max-width: 1400px) {
+}
+
+@media screen and (max-width: 800px) {
+  .bookMark-body h2 {
+    font-weight: 400;
+    font-size: 1.5625rem;
+  }
+
+  .table {
+    font-size: 14px;
+  }
+
+  .light-container .box {
+    width: 80%;
+  }
+
+  .light-container .box p {
+    font-weight: 300;
+    font-size: 1.0625rem;
+  }
+
+  .light-container .box .rules {
+    font-weight: 300;
+    font-size: 0.875rem;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .bookMark-body h2 {
+    font-weight: 400;
+    font-size: 1.25rem;
+  }
+
+  .table {
+    font-size: 12px;
+  }
+
+  .light-container .box {
+    width: 90%;
+  }
+
+  .light-container .box p {
+    font-weight: 300;
+    font-size: 1.0625rem;
+  }
+
+  .light-container .box .rules {
+    font-weight: 300;
+    font-size: 0.875rem;
+  }
+}
